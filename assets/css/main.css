@@ -1416,7 +1416,7 @@
 		font-size: 15pt;
 		font-weight: 400;
 		letter-spacing: 0em;
-		
+
 		line-height: 1.65em;
 	}
 
@@ -3390,7 +3390,7 @@
 		-ms-justify-content: center;
 		justify-content: center;
 		cursor: default;
-		height: 100vh;
+		height: 80vh;
 		min-height: 35em;
 		overflow: hidden;
 		position: relative;
