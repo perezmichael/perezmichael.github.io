@@ -3376,7 +3376,7 @@
 
 /* Banner */
 
-	#banner {
+	/* #banner {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3395,7 +3395,7 @@
 		overflow: hidden;
 		position: relative;
 		text-align: center;
-	}
+	} */
 
 		#banner h2 {
 			-moz-transform: scale(1);
