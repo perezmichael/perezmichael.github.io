@@ -3376,7 +3376,7 @@
 
 /* Banner */
 
-	/* #banner {
+	 #banner {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3390,12 +3390,12 @@
 		-ms-justify-content: center;
 		justify-content: center;
 		cursor: default;
-		height: 80vh;
+		height: 60vh;
 		min-height: 35em;
 		overflow: hidden;
 		position: relative;
 		text-align: center;
-	} */
+	}
 
 		#banner h2 {
 			-moz-transform: scale(1);
