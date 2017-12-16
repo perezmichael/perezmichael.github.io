@@ -5,6 +5,40 @@
     <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/main.css">
+    <script>/* onresize handler that waits until a window resize event has stopped before firing – doesn't fire extraneously */
+function on_resize(c,t){ onresize=function(){ clearTimeout(t);t = setTimeout(c,100)}; return c };
+
+/* Check these so we dont load the same things twice */
+addthis_loaded = false;
+
+/* Load content progressively. Must remember to also load them for IE 7 and 8, since they do not support media queries or the getComputedStyle function */
+on_resize(function() {
+
+    /* "Watch" the content of the body:after element. Will change as media queries fire. */
+    mq_tag = window.getComputedStyle(document.body,':after').getPropertyValue('content');
+    //console.log( "media query tag=" + mq_tag );
+
+    /* Load AddThis features for larger screens */
+    if ( mq_tag.indexOf("load-addthis") !=-1 && addthis_loaded == false ) {
+    /* We could also check to see if the target div was empty: !$.trim( $('#addthis').html() ).length */
+
+        var add_this_html =
+
+        '<li><img src="images/Filter1.png" alt="Wireframes" margin-bottom="50px"><p>Favorites</p></li>'
+        ;
+
+        $("#addthis").html(add_this_html);
+        $.getScript('http://s7.addthis.com/js/250/addthis_widget.js#pubid=XXX',
+        function(){
+            addthis.init(); //callback function for script loading
+        });
+
+        addthis_loaded = true;
+        //console.log( "! load-addthis has fired" );
+    }
+
+})(); // the magic extra () makes this function fire on page load
+</script>
     <script src"JS/picturefill.min.js" async></script>
 
     <link rel="stylesheet" href="CSS/responsive.css">
