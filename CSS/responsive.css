@@ -24,7 +24,21 @@
     width: 500px;
   }
 
-  
+  #skylar
+  {
+    width:500px;
+  }
+
+  #alyssa
+  {
+    width:500px;
+    float: right;
+  }
+
+  #clear
+  {
+    clear: both;
+  }
 
   #sectionstyle1
   {
