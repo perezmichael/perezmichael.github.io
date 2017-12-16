@@ -168,3 +168,9 @@ WireGallery
   text-align: center;
   list-style: none;
 }
+
+#wiregal li #hide {
+
+display:none
+
+}
