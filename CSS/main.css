@@ -169,8 +169,7 @@ WireGallery
   list-style: none;
 }
 
-#wiregal li #hide {
-
-display:none
-
+.hidden
+{
+  display:none;
 }
