@@ -24,9 +24,7 @@
     width: 500px;
   }
 
-  body:after {
-       content: 'load-addthis';
-       display: none; 
+  
 
   #sectionstyle1
   {
