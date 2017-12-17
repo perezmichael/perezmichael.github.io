@@ -55,32 +55,33 @@
   }
 
 #wiregal {
-  margin: 0;
+  /*margin: 0;
   padding: 0;
   list-style: none;
 
-  overflow: hidden;
+  overflow: hidden;*/
 
 
 }
 
 #wiregal li {
-  float: left;
-  vertical-align: middle;
+  /*float: left;*/
+  /*vertical-align: middle;*/
   width: 20%;
-  margin: 2.5%;
+  max-height: 345px;
+  /*margin: 2.5%;*/
   /*color: #bdc3c7;*/
-  list-style: none;
+  /*list-style: none;*/
 
 }
 
-#wiregal li p {
+/*#wiregal li p {
   margin: 0;
   padding: 5%;
   font-size: 12px;
   text-align: center;
   list-style: none;
-}
+}*/
 
 
 
