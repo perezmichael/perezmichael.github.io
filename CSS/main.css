@@ -121,7 +121,8 @@ ul li p{
 }
 
 aside blockquote{
-font-family: 'Ubuntu', sans-serif;
+font-family: 'Open Sans', sans-serif;
+color: #848484;
 font-size: 24px;
 margin:0;
 padding: 5%;
