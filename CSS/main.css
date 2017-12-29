@@ -1,3 +1,214 @@
+
+/*********************
+Landing Page
+**********************/
+html, body {
+
+  height: 100%;
+}
+
+
+
+.intro {
+	display:table;
+	height:100%;
+	width:100%;
+	margin:auto;
+	background:url(../images/DavidBanner.png) no-repeat 50% 50%;
+	background-size:cover;
+}
+
+.heading {
+  margin-left: 70px;
+  margin-top: 70px;
+}
+
+.heading p {
+  font-size: 24px;
+}
+
+
+
+.work {
+
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.projects {
+  font-family: 'Open Sans', sans-serif;
+  color: #d0d0d0;
+  font-size: 14px;
+  letter-spacing: .1em;
+  margin-top: 20px;
+}
+.hoprow
+{
+  margin-top: 2.5%;
+
+}
+.imgl
+{
+
+  float: left;
+  margin-bottom: 75px;
+}
+
+.contentl
+{
+  margin-left: 100px;
+  float: right;
+  margin-top: 40px;
+}
+
+/*.preview-title {
+	font-size: 28px;
+	font-weight: 700;
+	color: rgba(0,0,0,1);
+	margin-bottom: 4px;
+	position: relative;
+	display: inline-block;
+}
+.preview-title:after {
+	content: '';
+	position: absolute;
+	bottom: 1px;
+	left: 0;
+	width: 0%;
+	border-bottom: 2px solid #000;
+	transition: 0.4s;
+}*/
+
+.footer {
+  clear:both;
+  background-color: #efefed;
+  height: 275px;
+}
+
+.footer p {
+  /*padding-top: 100px;*/
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.left {
+  float: left;
+  width: 40%;
+  padding-top: 60px;
+}
+
+.middle {
+  float: left;
+  width: 25%;
+  padding-top: 60px;
+}
+
+/*.footer {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+
+    grid-gap: 10px;
+    font-family: 'Lato';
+    text-align: center;
+    font-size: 1.4em;
+    margin: 0 auto;
+
+}*/
+
+.container button {
+  background-color: #f6f6f8; /* grey */
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    padding: .75rem .75rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    float: left;
+    margin-top: 20px;
+    margin-right: 16px;
+    /*height: 50px;*/
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+
+    /*width: 50px;*/
+}
+
+.container .button2 {
+  background-color: white;
+    color: #979797;
+    border: 1px solid #979797;
+}
+
+.container .button2:hover {
+    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24), 0 3px 10px 0 rgba(0,0,0,0.19);*/
+    /*transform: scale(1.1,1.1);*/
+    background-color: #979797;
+    color:white;
+}
+
+.title {
+  display: inline;
+  position: relative;
+  overflow: hidden;
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.contentl {
+
+}
+
+.hoprow img {
+transition: all 0.3s ease;
+}
+
+.hoprow:hover img {
+  transform: scale(1.05, 1.05)
+}
+
+
+
+.hoprow:hover .title:after {
+  width: 100%;
+}
+
+.title:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 0;
+  bottom: -5px;
+  background: #000;
+  height: 2px;
+  transition-property: width;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+/*.title:hover:after,
+.title:focus:after,
+.title:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}*/
+
+
+
+
+
+
+
 /*********************
 GENERAL
 **********************/
@@ -6,6 +217,8 @@ GENERAL
   padding: 0;
   width:100%;
 }*/
+
+
 
 .content {
 max-width: 760px;
@@ -98,7 +311,11 @@ h5 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 12px;
 }
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 36px;
 
+}
 
 h2 {
   font-family: 'Ubuntu', sans-serif;
