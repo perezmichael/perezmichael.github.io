@@ -1,3 +1,33 @@
+.sprinttext {
+  line-height: 0.5;
+  text-align: center;
+  padding: 30px 30px;
+
+}
+.sprinttext span {
+  display: inline-block;
+  position: relative;
+}
+.sprinttext span:before,
+.sprinttext span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  top: 0;
+  width: 400px;
+}
+.sprinttext span:before {
+  right: 100%;
+  margin-right: 15px;
+
+}
+.sprinttext span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
 .navbar {
   height: 40px;
   font-family: 'Open Sans', sans-serif;
@@ -8,7 +38,7 @@
 .navbar-brand {
   font-size: 12px;
   text-transform: capitalize;
-  padding-left: 50px;
+
 }
 
 /*********************
@@ -29,12 +59,7 @@ padding-bottom: 20px !important;
 
 
 .intro {
-	display:table;
-	height:100%;
-	width:100%;
-	margin:auto;
-	background:url(../images/DavidBanner.png) no-repeat 50% 50%;
-	background-size:cover;
+
 }
 
 .heading {
@@ -46,17 +71,34 @@ padding-bottom: 20px !important;
   font-size: 24px;
 }
 
+#projects {
+  padding: 80px 0px;
+}
 
-
-.work {
+.intro-content {
+  padding-top: 200px;
+  /* background-color: white; */
+/* text-align: center; */
+/* vertical-align: center; */
 
 }
 
-.container {
+.intro-content p {
+  font-size: 28px;
+  /* background-color: rgba(0, 0, 0, 0.3);
+  color:white; */
+
+
+
+}
+
+
+
+/* .container {
   max-width: 1170px;
   margin: 0 auto;
   margin-top: 5%;
-}
+} */
 
 .projects {
   font-family: 'Open Sans', sans-serif;
@@ -68,21 +110,18 @@ padding-bottom: 20px !important;
 .hoprow
 {
   margin-top: 2.5%;
+  margin-bottom: 75px;
 
 }
 .imgl
 {
 
   float: left;
-  margin-bottom: 75px;
+
+  width: 388px;
 }
 
-.contentl
-{
-  margin-left: 100px;
-  float: right;
-  margin-top: 40px;
-}
+
 
 /*.preview-title {
 	font-size: 28px;
@@ -139,7 +178,9 @@ padding-bottom: 20px !important;
 
 }*/
 
-.container button {
+
+
+button {
   background-color: #f6f6f8; /* grey */
     border: none;
     font-family: 'Open Sans', sans-serif;
@@ -149,7 +190,7 @@ padding-bottom: 20px !important;
     text-decoration: none;
     display: inline-block;
     font-size: 1rem;
-    float: left;
+
     margin-top: 20px;
     margin-right: 16px;
     /*height: 50px;*/
@@ -161,21 +202,26 @@ padding-bottom: 20px !important;
     /*width: 50px;*/
 }
 
-.container .button2 {
+.container button {
+
+    float: left;
+}
+
+.button2 {
   background-color: white;
     color: #979797;
     border: 1px solid #979797;
 
 }
 
-.container .button1 {
+.button1 {
   background-color: #3A5998;
     color: white;
     /*border: 1px solid #979797;*/
 
 }
 
-.container button:hover {
+button:hover {
     /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24), 0 3px 10px 0 rgba(0,0,0,0.19);*/
     transform: scale(1.1,1.1);
     /*background-color: #979797;*/
@@ -188,7 +234,13 @@ padding-bottom: 20px !important;
   overflow: hidden;
   font-size: 24px;
   font-family: 'Raleway', sans-serif;
+  color: black;
 
+
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .contentl {
@@ -308,6 +360,28 @@ background-position: center top;*/
 
 }
 
+.bg {
+  /* The image used */
+ /* background-image: url("../images/DavidBanner.png") ; */
+
+ /* Full height */
+height: 100%;
+
+
+
+ /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background:url(../images/DavidBanner.png) no-repeat 50% 50%;
+  /* margin: 2.5% 0 22%; */
+
+
+
+
+}
+
 .bg-color
 {
 
@@ -319,6 +393,8 @@ background-color:#f6f6f8;
 .gallery {
   text-align: center;
   padding: 5% 5% 5%;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 
@@ -376,19 +452,19 @@ p {
 img {
   max-width: 100%;
 }
-
+/*
 ul li p{
   font-size:14px;
 
-}
+} */
 
 aside blockquote{
 font-family: 'Open Sans', sans-serif;
 color: #848484;
 font-size: 24px;
 margin:0;
-padding: 5%;
-text-align:center;
+padding: 5% 0;
+/* text-align:center; */
 
 }
 
