@@ -12,6 +12,16 @@
 
 } */
 
+@media screen and (min-width: 1367px) {
+
+.bg {
+  background-color: #EFEFEF;
+  background-image: none ;
+}
+
+
+}
+
 @media screen and (min-width: 1080px) {
 
   .contentl
@@ -27,6 +37,15 @@
   .hidden {
     display:block;
   }
+
+
+  .sprinttext span:before,
+  .sprinttext span:after {
+
+    width: 400px;
+  }
+
+
 
   .content {
   max-width: 760px;
