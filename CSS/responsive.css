@@ -14,6 +14,16 @@
 
 @media screen and (min-width: 1080px) {
 
+  .contentl
+  {
+    padding: 55px 100px;
+  }
+
+  .personas {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
   .hidden {
     display:block;
   }
