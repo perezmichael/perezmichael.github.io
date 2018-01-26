@@ -381,11 +381,11 @@ height: 100%;
 
 
  /* Center and scale the image nicely */
-  background-position: center;
+  /* background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   /* background-attachment: fixed; */
-  background:url(../images/DavidBanner.png) no-repeat 50% 50%;
+  background:url("") no-repeat 50% 50%;
   /* margin: 2.5% 0 22%; */
 
 
