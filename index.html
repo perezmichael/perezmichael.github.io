@@ -26,16 +26,34 @@
 
   gtag('config', 'UA-113141304-1');
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
 
-      <script
-        src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
-      <script src="JS/picturefill.min.js" async></script>
-      <script src="JS/smooth.js"></script>
-      <link rel="stylesheet" href="CSS/responsive.css">
-      <!-- <link rel="stylesheet" href="CSS/landing.css"> -->
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu:700" rel="stylesheet">
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+    </script>
+
 
 
     </head>
@@ -43,7 +61,7 @@
 
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container">
-      <a class="navbar-brand" href="#">MIKE PEREZ</a>
+      <a class="navbar-brand" href="#"><img src="images/mpnav.png"></a>
     </div>
     </nav>
 
@@ -59,17 +77,23 @@
         <div class="container">
           <div class="intro-content new">
 
-          <!-- <h1><b>Mike Perez</b></h1> -->
-          <p>I'm <b>Mike Perez</b>, a Product Designer working on IoT, Big Data, and Analytics @ Honeywell. </p>
+          <div class="mptit"><b>Mike Perez</b></div>
+          <!-- <img src="images/mpheaderlogo.png" > -->
+          <p>Product Designer working on IoT, Big Data, and Analytics.</p>
           <!-- <p>Hey! I'm Mike Perez.</p> -->
 
 
           <a href="https://www.linkedin.com/in/michael-perez-35697086/" target="_blank"><button class="button2"><img src="images/LINKEDIN.svg" ></button></a>
           <button class="button2"><img src="images/Email.svg"></button>
           <button class="button2">Résumé</button>
-          <a href="#projects"><button class="button1">PROJECTS</button></a>
+
 
           </div>
+
+
+
+          <a href="#projects"><div class="button1" >
+            <img src="images/down-arrow.svg" width="50px"> </div></a>
 
 
 
