@@ -9,8 +9,15 @@
 @media screen and (min-width: 768px) {
 
 
+
+
   .intro-content {
-    padding-top: 300px;
+    /* padding-top: 300px; */
+    /* position: absolute; */
+    /* top: 50%; left: 50%; */
+    /* transform: translate(-50%,-50%); */
+    width: 1000px;
+
 
   }
 
