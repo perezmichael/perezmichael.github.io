@@ -97,7 +97,7 @@ width: 300px;
 
 
 .intro-content p {
-  font-size: 28px;
+  font-size: 20px;
   /* background-color: rgba(0, 0, 0, 0.3);
   color:white; */
 
@@ -227,20 +227,16 @@ button {
 
 
 
-.button1 {
-    color: #3A5998;
-    fill: #fff;
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
+ .button1 {
+    display: none;
 
-    /*border: 1px solid #979797;*/
+
 
 }
 
 .mptit {
 
-  font-size: 64px;
+  font-size: 36px;
   font-family: 'Raleway', sans-serif;
   color: #3A5998;
   letter-spacing: 1px;
@@ -249,12 +245,7 @@ button {
 
 
 
-button:hover {
-    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24), 0 3px 10px 0 rgba(0,0,0,0.19);*/
-    transform: scale(1.1,1.1);
-    /*background-color: #979797;*/
-    /*color:white;*/
-}
+
 
 .title {
   display: inline;
@@ -275,33 +266,7 @@ a:hover {
 
 }
 
-.hoprow img {
-transition: all 0.3s ease;
-}
 
-.hoprow:hover img {
-  transform: scale(1.05, 1.05)
-}
-
-
-
-.hoprow:hover .title:after {
-  width: 100%;
-}
-
-.title:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  right: 0;
-  width: 0;
-  bottom: -5px;
-  background: #000;
-  height: 2px;
-  transition-property: width;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-out;
-}
 /*.title:hover:after,
 .title:focus:after,
 .title:active:after {
