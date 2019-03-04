@@ -1,5 +1,28 @@
 /* body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } */
 /* canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */
+
+@font-face {
+  font-family: "GeomanistMedium";
+  src: url("CSS/fonts/geomanist-bold-webfont.eot");
+  src: url("CSS/fonts/geomanist-bold-webfont.eot") format("embedded-opentype"),
+    url("CSS/fonts/geomanist-bold-webfont.woff") format("woff"),
+    url("CSS/fonts/geomanist-bold-webfont.ttf") format("truetype"),
+    url("CSS/fonts/geomanist-bold-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "On-AirRegular";
+  src: url("fonts/on-air-regular-webfont.eot");
+  src: url("fonts/on-air-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/on-air-regular-webfont.woff") format("woff"),
+    url("fonts/on-air-regular-webfont.ttf") format("truetype"),
+    url("fonts/on-air-regular-webfont.svg#OnAirRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 #particles-js {
   position: absolute;
   width: 100%;
@@ -12,23 +35,17 @@
   background-position: 50% 50%;
 }
 
-.sectionimage {
-  margin: -400px 0 0 600px;
-}
-
-.sectionimageleft {
-  margin: -400px 0 0 -600px;
-}
-
-.right {
-  margin: -400px 0 0 600px;
+.navitems {
+  text-transform: uppercase;
+  font-family: "geomanist";
+  font-size: 14px;
 }
 
 .skills {
   display: inline-block;
   margin-right: 13px;
   margin-bottom: 13px;
-  padding: 5px 13px;
+  padding: 10px 13px;
   border: 2px solid #fff;
 
   -webkit-transition: opacity 250ms ease;
@@ -38,36 +55,42 @@
   font-weight: 300;
   font: 16px "Open Sans", Georgia, serif;
   text-transform: uppercase;
-  font-weight: medium;
+  font-weight: 500;
   letter-spacing: -0.5px;
 }
 
 .skills.click {
   background-color: white;
   color: black;
+  border: #000;
+}
+
+.skills.black {
+  color: #000;
+  border: 2px solid #000;
 }
 
 .section-intro {
-  background: url("") no-repeat;
+  background-color: #fff;
   background-size: cover;
-
-  min-height: 500px;
+  padding: 90px 0 100px;
+  min-height: 700px;
 }
 
 .heroimg {
   margin: -300px 0 0 600px;
 }
 .section-intro h2 {
+  margin-top: 150px;
   font: 48px/48px "Open Sans", Georgia, serif;
   color: #000;
-  text-transform: uppercase;
+
   font-weight: bold;
-  /* margin: 0 0 60px 20px; */
 }
 
 .section-intro p {
   font: 32px "Open Sans", Georgia, serif;
-  max-width: 540px;
+  max-width: 500px;
   color: #000;
   line-height: 32pt;
   letter-spacing: -0.5px;
@@ -81,14 +104,16 @@
   padding: 90px 0 100px;
   min-height: 768px;
 }
-.sectioncenter {
-  margin-top: 150px;
+
+.hopmock {
+  margin: -400px 0 0 600px;
 }
 
 .section-hop h2 {
-  font: 48px/48px "Open Sans", Georgia, serif;
+  margin-top: 150px;
+  font: 48px/48px "Geomanist", Georgia, serif;
   color: #fff;
-  text-transform: uppercase;
+
   font-weight: bold;
   /* margin: 0 0 60px 20px; */
 }
@@ -101,30 +126,63 @@
   margin: 0 0 30px 0px;
   font-weight: regular;
 }
-.section-hop .avatar img {
-  margin: 0 0 10px 20px;
+
+.section-cfw {
+  background: url(../images/cfwbg.png) no-repeat;
+  background-size: cover;
+  padding: 90px 0 100px;
+  min-height: 768px;
 }
-.section-hop .caption {
-  margin: 0 0 40px 20px;
-  color: #eee;
+
+.section-cfw h2 {
+  margin-top: 150px;
+  font: 48px/48px "Open Sans", Georgia, serif;
+  color: #fff;
+
+  font-weight: bold;
 }
-.section-hop .caption a {
-  color: #eee;
-}
-.section-hop .caption a:hover {
-  background-color: #0cf;
+
+.section-cfw p {
+  font: 32px "Open Sans", Georgia, serif;
+  max-width: 540px;
+  color: #fff;
+  line-height: 32pt;
+  letter-spacing: -0.5px;
+  margin: 0 0 30px 0px;
+  font-weight: regular;
 }
 
 .section-connect {
-  background: #38202e url(../images/connectbg.png) no-repeat;
+  background: #38202e url(../images/connectbg3.png) no-repeat;
   background-size: cover;
   padding: 90px 0 100px;
-  overflow: hidden;
-  min-height: 700px;
+  min-height: 768px;
 }
-.section-connect .container {
-  position: relative;
+.section-connect h2 {
+  margin-top: 150px;
+  font: 48px/48px "Open Sans", Georgia, serif;
+  color: #fff;
+  font-weight: bold;
 }
+
+.section-connect p {
+  font: 32px "Open Sans", Georgia, serif;
+  max-width: 540px;
+  color: #fff;
+  line-height: 32pt;
+  letter-spacing: -0.5px;
+  margin: 0 0 30px 0px;
+  font-weight: regular;
+}
+
+.connectmock {
+  margin: -400px 0 0 600px;
+}
+.cfwmock {
+  margin: -500px 0 0 480px;
+  width: 700px;
+}
+
 .section-connect .stars {
   position: absolute;
   left: -50%;
@@ -140,21 +198,64 @@
   z-index: 100;
 }
 
-.div2 {
-  border: 1px solid black;
-  height: 120px;
-  width: 150px;
-  background: url(img_flwr.gif);
-  background-repeat: no-repeat;
+.section-testimonials {
+  background: #fff url("") no-repeat;
   background-size: cover;
+  padding: 90px 0 100px;
+  min-height: 400px;
+  color: #000;
+  align-items: center;
+  text-align: center;
 }
 
-.div3 {
-  border: 1px solid black;
-  height: 120px;
-  width: 150px;
-  background: url(img_flwr.gif);
-  background-repeat: no-repeat;
+.section-testimonials h1 {
+  font: 48px "Open Sans", Georgia, serif;
+  margin-bottom: 50px;
+}
+
+.section-testimonials h2 {
+  font: "Open Sans", Georgia, serif;
+
+  font-weight: regular;
+}
+
+.section-testimonials p {
+  font: 18px "Open Sans", Georgia, serif;
+
+  letter-spacing: -0.5px;
+  margin: 0 0 30px 0px;
+  font-weight: medium;
+}
+
+.label {
+  font: 14px "Open Sans", Georgia, serif;
+  margin: 0 0 0px 0px;
+}
+
+.section-testimonials img {
+  margin-bottom: 20px;
+}
+
+.section-reach {
+  background: #000 url("") no-repeat;
+  background-size: cover;
+  padding: 90px 0 100px;
+  min-height: 300px;
+  color: #fff;
+  align-items: center;
+  text-align: center;
+}
+
+.section-reach h2 {
+  font: 48px/48px "Open Sans", Georgia, serif;
+  color: #fff;
+
+  font-weight: bold;
+}
+
+.section-reach p {
+  font: 24px "Open Sans", Georgia, serif;
+  color: #fff;
 }
 
 .sprinttext {
@@ -189,8 +290,8 @@
   height: 50px;
   font-family: "Open Sans", sans-serif;
   /* opacity: 0.5; */
-  color: #fff;
-  background-color: #fff;
+  color: #000 !important;
+  background-color: #fff !important;
 }
 
 .navbar-brand {
@@ -225,25 +326,7 @@ body {
 }
 
 #projects {
-  padding: 80px 0px;
-}
-
-.intro-content {
-  /* padding-top: 50%; */
-  /* background-color: white; */
-  /* text-align: center; */
-  /* vertical-align: center; */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-}
-
-.intro-content p {
-  font-size: 20px;
-  /* background-color: rgba(0, 0, 0, 0.3);
-  color:white; */
+  /* padding: 80px 0px; */
 }
 
 /* .container {
