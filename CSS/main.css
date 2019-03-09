@@ -153,7 +153,7 @@
 }
 
 .section-connect {
-  background: #38202e url(../images/connectbg3.png) no-repeat;
+  background: #38202e url(../images/Connectbg3.png) no-repeat;
   background-size: cover;
   padding: 90px 0 100px;
   min-height: 768px;
@@ -313,9 +313,6 @@ body {
   padding-bottom: 20px !important;
 }
 
-.intro {
-}
-
 .heading {
   margin-left: 70px;
   margin-top: 70px;
@@ -459,9 +456,6 @@ a:hover {
   text-decoration: none;
 }
 
-.contentl {
-}
-
 /*.title:hover:after,
 .title:focus:after,
 .title:active:after {
@@ -503,9 +497,6 @@ margin: 0 auto;
   font-family: "Ubuntu", sans-serif;
   font-size: 20px;
   border-radius: 2px;
-}
-#Header-Pic {
-  /*width:100%;*/
 }
 
 .centered {
