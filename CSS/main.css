@@ -1,13 +1,71 @@
 /* body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } */
 /* canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */
 
+.proj {
+  text-align: center;
+
+  margin: 100px auto;
+}
+
+.cont {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.proj h2 {
+  font-family: "Geomanist-medium";
+  font-size: 32px;
+}
+
+.proj p {
+  font-family: "Geomanist-regular";
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.proj img {
+  margin: 50px auto;
+}
+
 @font-face {
-  font-family: "GeomanistMedium";
-  src: url("CSS/fonts/geomanist-bold-webfont.eot");
-  src: url("CSS/fonts/geomanist-bold-webfont.eot") format("embedded-opentype"),
-    url("CSS/fonts/geomanist-bold-webfont.woff") format("woff"),
-    url("CSS/fonts/geomanist-bold-webfont.ttf") format("truetype"),
-    url("CSS/fonts/geomanist-bold-webfont.svg") format("svg");
+  font-family: "Geomanist-bold";
+  src: url("fonts/geomanist-bold-webfont.eot");
+  src: url("fonts/geomanist-bold-webfont.eot") format("embedded-opentype"),
+    url("fonts/geomanist-bold-webfont.woff") format("woff"),
+    url("fonts/geomanist-bold-webfont.ttf") format("truetype"),
+    url("fonts/geomanist-bold-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geomanist-regular";
+  src: url("fonts/geomanist-regular-webfont.eot");
+  src: url("fonts/geomanist-regular-webfont.eot") format("embedded-opentype"),
+    url("fonts/geomanist-regular-webfont.woff") format("woff"),
+    url("fonts/geomanist-regular-webfont.ttf") format("truetype"),
+    url("fonts/geomanist-regular-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Geomanist-light";
+  src: url("fonts/geomanist-light-webfont.eot");
+  src: url("fonts/geomanist-light-webfont.eot") format("embedded-opentype"),
+    url("fonts/geomanist-light-webfont.woff") format("woff"),
+    url("fonts/geomanist-light-webfont.ttf") format("truetype"),
+    url("fonts/geomanist-light-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geomanist-medium";
+  src: url("fonts/geomanist-medium-webfont.eot");
+  src: url("fonts/geomanist-medium-webfont.eot") format("embedded-opentype"),
+    url("fonts/geomanist-medium-webfont.woff") format("woff"),
+    url("fonts/geomanist-medium-webfont.ttf") format("truetype"),
+    url("fonts/geomanist-medium-webfont.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -37,12 +95,12 @@
 
 .navitems {
   text-transform: uppercase;
-  font-family: "geomanist";
-  font-size: 14px;
+  font-family: "geomanist-regular";
+  font-size: 12px;
 }
 
 .skills {
-  display: inline-block;
+  /* display: inline-block;
   margin-right: 13px;
   margin-bottom: 13px;
   padding: 10px 13px;
@@ -51,12 +109,33 @@
   -webkit-transition: opacity 250ms ease;
   transition: opacity 250ms ease;
   color: #fff;
-  font-size: 16px;
+
   font-weight: 300;
   font: 16px "Open Sans", Georgia, serif;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: -0.5px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  /* transition-duration: 0.4s;  */
+
+  border: none;
+  font-family: "Geomanist-regular", sans-serif;
+  font-size: 16px;
+
+  color: black;
+  padding: 0.75rem 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+
+  margin-top: 20px;
+  margin-right: 16px;
+  /*height: 50px;*/
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 }
 
 .skills.click {
@@ -68,6 +147,17 @@
 .skills.black {
   color: #000;
   border: 2px solid #000;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.skills.black:hover {
+  /* background-color: #000; /* Green */
+  /* color: white; */
+  transform: scale(1.05, 1.05);
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 }
 
 .section-intro {
@@ -291,7 +381,7 @@
   font-family: "Open Sans", sans-serif;
   /* opacity: 0.5; */
   color: #000 !important;
-  background-color: #fff !important;
+  background-color: #fff0 !important;
 }
 
 .navbar-brand {
